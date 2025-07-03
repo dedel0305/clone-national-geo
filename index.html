@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="src/script/projeto.js" defer></script>
+    <script type="module" src="src/script/script.js" defer></script>
+  <!--   <script src="src/script/modules/tabNavigation.js" defer></script> -->
     <title>National Geographic</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
 
         <section class="section_one grid_section" id="Animais"> <!-- inicio primeira section -->
             <h1 class="titulos">National Geographic</h1>
-            <ul class="animais_list">
+            <ul class="animais_list" data-tab="animais">
                 <li><img src="src/assets/img/raposa.jpg" alt="imagem raposa" title="raposa"></li>
                 <li><img src="src/assets/img/esquilo.jpg" alt="imagem esquilo"></li>
                 <li><img src="src/assets/img/urso.jpg" alt="imagem de urso"></li>
@@ -35,43 +36,43 @@
                 <li><img src="src/assets/img/leão.jpg" alt="imagem do leão"></li>
             </ul>
 
-            <div class="animais_descricao">
-                <section>
+            <div class="animais_descricao" data-tab="description">
+                <section data-anima="anima-right">
                     <h2>Raposa</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt doloremque sed dolorum quia totam dicta officiis modi dolores fugiat explicabo earum, blanditiis voluptatum vel odit rerum possimus quasi cum?
                     </p>
                 </section>
 
-                <section>
+                <section  data-anima="anima-right">
                     <h2>Esquilo</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quis assumenda molestias beatae ipsam rem dignissimos laborum velit, quisquam autem doloremque maiores maxime. Reiciendis repellendus expedita aliquid unde quaerat. Ipsum?
                     </p>
                 </section>
 
-                <section>
+                <section  data-anima="anima-right">
                     <h2>Urso</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quis assumenda molestias beatae ipsam rem dignissimos laborum velit, quisquam autem doloremque maiores maxime. Reiciendis repellendus expedita aliquid unde quaerat. Ipsum?
                     </p>
                 </section>
 
-                <section>
+                <section  data-anima="anima-right">
                     <h2>Lobo</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quis assumenda molestias beatae ipsam rem dignissimos laborum velit, quisquam autem doloremque maiores maxime. Reiciendis repellendus expedita aliquid unde quaerat. Ipsum?
                     </p>
                 </section>
 
-                <section>
+                <section  data-anima="anima-right">
                     <h2>babuino</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure a asperiores non impedit qui cum eligendi doloribus. Esse laudantium, dolor at sed nobis voluptatem aliquam dignissimos sint. Magni, eius esse!
                     </p>
                 </section>
 
-                <section>
+                <section  data-anima="anima-right">
                     <h2>Leão</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam temporibus illum nemo fuga repellat saepe, iure quidem aut rem quos voluptates autem adipisci ipsa ab quis in tenetur quasi iste.

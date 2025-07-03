@@ -48,14 +48,14 @@ ul {
 }
 
 .grid_container {
-    border: 5px solid #fb5;
+   /*  border: 5px solid #fb5; */
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 1000px) 1fr;
 
 }
 
 .grid_section {
-   border: 2px solid red;
+ /*   border: 2px solid red; */
     width: 100%;
     grid-column: 2 / 4;
     padding: 15px;
