@@ -11,7 +11,7 @@
 <body>
     <div class="grid_container">
         <!-- inicio cabeçalho -->
-        <img src="src/assets/img/Logo.png" alt="logo national geographitc">
+        <img class="img" src="src/assets/img/Logo.png" alt="logo national geographitc">
         <header class="menu">
             <nav>
                 <ul>
@@ -84,20 +84,49 @@
         <!-- inicio da segunda section -->
          <section class="section_two grid_section" id="Curiosidades">
             <h1 class="titulos">Curiosidades</h1>
-            <dl class="list_curiosidades">
-                <dt>qual idade dos animais</dt>
+            <dl class="list_curiosidades" data-accordion="accordion">
+                <dt>qual idade dos animais </dt>
                 <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellat libero eos odio minus ad totam, ut ullam corporis illum aut impedit voluptatibus dignissimos, odit error deserunt nihil in quam.</dd>
 
                 <dt>quais as especies dos animais</dt>
                 <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto distinctio quae eaque dicta quasi ex ut possimus sint. Enim fugit, doloremque voluptatibus ipsum quasi cupiditate quidem repellendus esse et dignissimos.</dd>
 
-                <dt>qual as maiores diferenças ?</dt>
+                <dt>qual as maiores diferenças ? </dt>
                 <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas amet ducimus dignissimos quam. Possimus aut aliquam enim tempora quaerat maiores, pariatur obcaecati aspernatur! Doloremque perferendis dolores non eum aliquam?</dd>
 
                 <dt>como protegelos</dt>
                 <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci debitis optio maiores dolorem saepe fuga ipsa odit nihil pariatur quas velit, recusandae obcaecati eveniet voluptas non nemo provident delectus.</dd>
             </dl>
          </section> <!-- fim da segunda section -->
+
+         <!-- inicio slider -->
+          <div class="box_slider grid_section">
+            <button class="preview arrow">⏴</button>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="src/assets/images/foto1.jpg" alt="raposa" title="raposa"></div>
+                    <div class="slide"><img src="src/assets/images/foto2.jpg" alt="esquilo"></div>
+                    <div class="slide"><img src="src/assets/images/foto3.jpg" alt="urso"></div>
+                    <div class="slide"><img src="src/assets/images/foto4.jpg" alt="lobo"></div>
+                    <div class="slide"><img src="src/assets/images/foto5.jpg" alt="babuino"></div>
+                    <div class="slide"><img src="src/assets/images/foto6.jpg" alt="leão"></div>
+                </div>
+            </div>
+            <button class="next arrow">⏵</button>
+          </div>
+
+         
+
+          <div class=" dots grid_section">
+            <div class="dot ativo"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <!-- fim da slider -->
+
 
          <!-- inico da tercira section -->
           <section class="section-three grid_section" id="Sobre">
