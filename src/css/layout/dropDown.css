@@ -1,0 +1,47 @@
+[data-dropMenu="menuDrop"]{
+    position: relative;
+
+}
+
+[data-dropMenu="menuDrop"]::after {
+    position: absolute;
+    content: "⏶";
+    display: block;
+    /* top: 20px; */
+    left: 10px;
+   top: 3px;
+    width: 20px;
+    font-size: 40px;
+    color: var(--cor6);
+}
+
+.drop-down-menu {
+    background-color: var(--cor6);
+    border-radius: 3px;
+    border: 2px solid var(--cor4);
+    position: absolute;
+    padding: 15px;
+  /*   width: 100px;
+    height: 100px; */
+    
+}
+
+.drop-down-menu li a {
+    text-decoration: none;
+    color: var(--cor4);
+    font-family:"IBM plex Mono", monospace ;
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1.5px;
+    padding: 7px;
+    margin-right: 10px;
+}
+
+.drop-down-menu li a:hover{
+    color: var(--cor5);
+    transform: scale(1.2);
+    
+}
+
