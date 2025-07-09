@@ -4,7 +4,11 @@
 
 .list_curiosidades {
     grid-column: 2/4;
-    line-height: 25px;
+   padding-right: 40px;
+}
+
+.tiulos {
+    padding-left: 40px;
 }
 
 .list_curiosidades dt {
@@ -17,7 +21,7 @@
     margin-bottom: 10px;
 
 }
-
+/* &#11022 */
 .list_curiosidades dt::before {
     content: "";
     display: inline-block;
@@ -29,6 +33,45 @@
 
 }
 
+[data-accordion="accordion"] dt::after{
+    content: "⬎";
+    margin-left: 10px;
+  
+}
+
+[data-accordion="accordion"] dt.ativo::after{
+    content: "⬏";
+    margin-left: 10px;
+   
+}
+
+
+[data-tab="description"] dd.ativo.anima-curiosidades {
+    animation: anima-curiosidades .9s forwards;
+}
+
+[data-accordion="accordion"] dd {
+    display: none;
+}
+
+[data-accordion="accordion"] dd.ativo {
+    display: block;
+}
+
+@keyframes anima-curiosidades {
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0); /* orizontal, vertical,  controla a movimentação 3D */
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0 ,30px, 30px);
+    }
+}
+
+
+
 .list_curiosidades dd {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -36,6 +79,19 @@
     margin-bottom: 15px;
     text-indent: 40px;
 }
+
+
+/* inserindo manipulação no js */
+
+[data-accordion="accordion"] dd {
+    display: none;
+}
+
+[data-accordion="accordion"] dd.ativo {
+    display: block;
+}
+
+
 
 @media(max-width: 650px){
     .list-curiosidades {
@@ -54,4 +110,6 @@
     .list-curiosidades dt::before {
         margin-bottom: 2px;
     }
+
+  
 }

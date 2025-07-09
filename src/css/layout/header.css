@@ -5,6 +5,12 @@
     margin-top: 32px;
 }
 
+.img {
+    width: 15%;
+    padding: 20px;
+    background-color: #717878;
+}
+
 .grid_container > img {
     width: 40%;
 }
@@ -35,5 +41,6 @@
     .menu{
         grid-column: 1;
         margin-top: 0px;
+        background-color: transparent;
     }
 }
