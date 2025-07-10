@@ -3,3 +3,4 @@ import inittab from "./modules/tabNavigation.js";
 
 inittab();
 initAccordion()
+initDropMenu()

@@ -14,10 +14,18 @@
         <img class="img" src="src/assets/img/Logo.png" alt="logo national geographitc">
         <header class="menu">
             <nav>
-                <ul>
+                <ul data-menu="list">
                     <li><a href="#">Animais</a></li>
                     <li><a href="#">Curiosidades</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li data-dropMenu="menuDrop">
+                        <a href="#">Sobre</a>
+                        <ul class="drop-down-menu">
+                            <li><a href="">empresa</a></li>
+                            <li><a href="">equipe</a></li>
+                            <li><a href="">serviços</a></li>
+                            <li><a href="">parceiros</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contato</a></li>
                     <li><a href="#">Login ⇨</a></li>
                 </ul>
